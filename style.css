@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Tilt+Neon&display=swap');
+
+:root {
+    --verde-claro: #99d98c;
+    --verde-azulado: #52b69a;
+    --azul: #168aad;
+    --branco: #FFFFFF;
+    --preto: #161616;
+    --font-basic: Arial, Verdana, sans-serif;
+    --font-destaque: 'Tilt Neon', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--font-basic);
+    text-align: justify;
+}
+
+strong {
+    color: var(--azul);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--verde-claro), var(--verde-azulado), var(--azul));
+    color: var(--branco);
+    padding: 1em 0px;
+    min-height: 150px;
+}
+
+.inicio>h1 {
+    font-family: var(--font-destaque);
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: 2.5px;
+    text-shadow: 1px 1px 9px var(--preto);
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+.inicio>p {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: center;
+    max-width: 500px;
+    margin: 2em auto;
+}
+
+h2 {
+    background-image: linear-gradient(to right, var(--verde-claro), var(--branco));
+    color: var(--azul);
+    font-family: var(--font-destaque);
+    font-size: 2em;
+    text-indent: 20px;
+}
+
+p {
+    text-indent: 25px;
+    margin-top: 1em;
+    line-height: 1.5em;
+}
+
+.ancoras>a {
+    border: 2px solid var(--verde-claro);
+    border-radius: 1px 7px;
+    color: var(--branco);
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+    margin-left: 0.7em;
+    transition-duration: 0.6s;
+}
+
+.ancoras>a:first-child{
+    margin-left: 5em;
+}
+
+.ancoras>a:hover {
+    background-color: var(--verde-claro);
+    color: var(--azul);
+    animation: 2s;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+}
+
+.link-texto {
+    color: var(--verde-claro);
+    text-decoration: none;
+}
+
+.link-texto:hover {
+    color: var(--verde-azulado);
+}
+
+.link-texto::after {
+    content: '\00A0\1F517';
+    text-decoration: none;
+}
+
+.extra,
+.historia,
+.versoes {
+    padding: 3.5em;
+    margin: auto;
+}
+
+.versoes {
+    padding-top: 0px;
+}
+
+img {
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+}
+
+.img-bugdroid {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.video {
+    background-color: var(--verde-azulado);
+    padding: 1em;
+    border-top: 3px solid var(--azul);
+    border-bottom: 3px solid var(--azul);
+    padding-bottom: 55%;
+    position: relative;
+}
+
+.video>iframe {
+   position: absolute;
+   top: 6%;
+   left: 5%;
+   width: 90%;
+   height: 90%;
+}
+
+.box-extra>h3 {
+    font-family: var(--font-destaque);
+    font-size: 1.5em;
+    text-shadow: 1px 1px 5px black;
+}
+
+ul {
+    columns: 2;
+}
+
+ul>li {
+    list-style-type: none;
+    line-height: 1.5em;
+    list-style-type: '\2714\00A0';
+    margin-left: 1em; 
+}
+
+footer {
+    background-color: var(--azul);
+    color: var(--branco);
+    margin: 0px;
+    padding: 1em;
+    text-align: center;
+}
+
+@media (min-width: 720px) {
+    .corpo {
+        border: 4px solid var(--azul);
+        margin: 4em;
+        border-radius: 7px 30px;
+        box-shadow: 1px 1px 15px 1px var(--preto);
+    }
+
+    .box-extra {
+        background-color: var(--verde-claro);
+        background-image: linear-gradient(to bottom, var(--verde-claro), var(--verde-azulado), var(--azul));
+        border: 0.5px solid;
+        border-radius: 7px 30px;
+        box-shadow: 1px 1px 15px 1px var(--preto);
+        color: var(--branco);
+        padding: 3em;
+    }
+
+    .footer {
+        border-top: 4px solid var(--verde-claro);
+    }
+}
+
+@media (max-width: 720px) {
+    .extra {
+        color: var(--branco);
+        background-image: linear-gradient(to bottom, var(--verde-claro), var(--verde-azulado), var(--azul));
+    }
+
+    ul {
+        columns: 1;
+    }
+
+    footer {
+        border-top: 2px solid var(--verde-claro);
+    }
+
+}
+
+@media (max-width: 375px) {
+    .ancoras>a {
+        padding: 5px;
+        display: block;
+        text-align: center;
+        margin: 1em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .ancoras>a:first-child{
+        margin-left: 13px;
+    }
+}
